@@ -1,9 +1,7 @@
 define([
     'angular',
+    './hello_module/loader'
 ], function (ng) {
     'use strict';
-
-    console.log(ng);
-
-    return ng.module('app', []);
+     return ng.module('app', ['app.helloModule']);
 });

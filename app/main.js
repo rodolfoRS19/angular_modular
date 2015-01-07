@@ -4,9 +4,9 @@
 // There usage will become more apparent further along in the tutorial.
 require.config({
   paths: {
-    jquery: 'jquery/jquery-1.11.2',
-   	domReady: 'require/domready',
-    angular: 'angular/angular'
+    jquery: '../libs/scripts/jquery/jquery-1.11.2',
+   	domReady: '../libs/scripts/require/domready',
+    angular: '../libs/scripts/angular/angular'
   },
 
   // angular does not support AMD out of the box, put it in a shim
