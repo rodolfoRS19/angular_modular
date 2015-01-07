@@ -6,13 +6,17 @@ require.config({
   paths: {
     jquery: '../libs/scripts/jquery/jquery-1.11.2',
    	domReady: '../libs/scripts/require/domready',
-    angular: '../libs/scripts/angular/angular'
+    angular: '../libs/scripts/angular/angular',
+    router: '../libs/scripts/angular/ui_router'
   },
 
   // angular does not support AMD out of the box, put it in a shim
     shim: {
         'angular': {
             exports: 'angular'
+        },
+        'router':{
+          deps: ['angular'],
         }
     },
 

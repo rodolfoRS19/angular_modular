@@ -1,7 +1,17 @@
 define([
     'angular',
+    'router',
     './hello_module/loader'
-], function (ng) {
+], function (ng,$stateProvider) {
     'use strict';
-     return ng.module('app', ['app.helloModule']);
+     ng.module('app', ['app.helloModule','ui.router'])
+
+     	.config(function($stateProvider){
+
+	 		$stateProvider.state('contacts', {
+	 		  url:'/contacts',
+			  templateUrl: 'app/hello_module/partials/list_persons.html',
+			  controller:'personController'
+			});
+     	});
 });
