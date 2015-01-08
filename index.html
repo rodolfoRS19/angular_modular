@@ -1,15 +1,25 @@
  <html>
  	<head>
  		 <script data-main="app/main" src="libs/scripts/require/require.js"></script>
+ 		 <link rel="stylesheet" type="text/css" href="common/css/global/global.css">
  	</head>
  	<body>
- 		<h5>
- 			It is a training!!!
- 		</h5>
- 		<div ng-controller="helloController">
- 			{{hello}}
+ 		<nav class="fixed">
+ 			<ul>
+ 				<li><a href="#">Home</a></li>
+ 				<li><a href="#">Galery</a></li>
+ 				<li><a href="#">Menu</a></li>
+ 				<li><a href="#">Contact</a></li>
+ 			</ul>
+ 		</nav>
+ 		<div id="home">
+ 			<nav>
  		</div>
- 		<a ui-sref="contacts">Go to contact view</a>
- 		<section ui-view></section>
+ 		<div id="second">
+ 			<nav>
+ 		</div>
+ 		<div id="third">
+ 			<nav>
+ 		</div>
 	<body>
  </html>

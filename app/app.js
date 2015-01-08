@@ -1,5 +1,6 @@
 define([
     'angular',
+    '../common/js/global/loader',
     'router',
     './hello_module/loader'
 ], function (ng,$stateProvider) {
