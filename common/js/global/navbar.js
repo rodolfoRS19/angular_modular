@@ -1,5 +1,9 @@
 define(['jquery'],function($){
 		$(window).scroll(function(){
-			$('nav').fadeOut("slow").fadeIn("slow");
+			$('nav').fadeOut("slow",function(){
+				$('nav').fadeIn("slow",function(){
+					return null;
+				});
+			});
 		});
 });
