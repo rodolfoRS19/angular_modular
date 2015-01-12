@@ -1,0 +1,1 @@
+require.config({baseUrl:"./app",paths:{jquery:"libs/vendor/scripts/jquery/jquery-1.11.2",angular:"libs/vendor/scripts/angular/angular",router:"libs/vendor/scripts/angular/ui_router",domReady:"../config/domready"},shim:{angular:{exports:"angular"},router:{deps:["angular"]}},deps:["/bootstrap"]}),define("main",function(){});
