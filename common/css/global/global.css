@@ -39,3 +39,9 @@ nav a{
 	background: white;
 	width: 100%;
 }
+
+.nav-fadeOut{
+	 -webkit-transition: width 4s; /* For Safari 3.1 to 6.0 */
+     transition: display 4s;
+     display: none;
+}
