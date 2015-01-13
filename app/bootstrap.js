@@ -4,8 +4,8 @@
 define([
     'require',
     'angular',
-    'app/app'
-], function (require, ng) {
+    './app'
+], function (require, ng, app) {
     'use strict';
 
     require(['domReady!'], function (document) {
