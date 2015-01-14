@@ -4,18 +4,13 @@ define([
     './libs/common/js/home/loader'
 ], function (ng,$stateProvider) {
     'use strict';
-     ng.module('app', ['ui.router'])
+     ng.module('app', ['app.home','ui.router'])
 
-     .config(function($stateProvider){
+     .config(function(homeModule,$stateProvider){
 
 	 		$stateProvider.state('contacts', {
 	 		  url:'/contacts',
-			  templateUrl: 'app/hello_module/partials/list_persons.html',
-			  controller:'personController'
-			})
-            $stateProvider.state('contacts.details', {
-                url:'/:id',
-                templateUrl:'app/hello_module/partials/details_contact.html'
-            });
+			  template: '<h1>hello</h1>'
+			});
      	}
-});
+})
