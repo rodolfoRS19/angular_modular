@@ -17,12 +17,12 @@ require.config({
     "IMPORTANT" don't put here our app modules, cause don't will be load their dependencies.
   */
   paths: {
-    jquery: './app/libs/vendor/scripts/jquery/jquery-1.11.2',
+    jquery: './app/libs/vendor/js/jquery/jquery-1.11.2',
     
-    angular: './app/libs/vendor/scripts/angular/angular',
-    router: './app/libs/vendor/scripts/angular/ui_router',
+    angular: './app/libs/vendor/js/angular/angular',
+    router: './app/libs/vendor/js/angular/ui_router',
 
-    domReady: './app/libs/vendor/scripts/require_plugins/domready'
+    domReady: './app/libs/vendor/js/require_plugins/domready'
   },
 
   // angular does not support AMD out of the box, put it in a shim
