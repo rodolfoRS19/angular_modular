@@ -1,0 +1,16 @@
+{
+  "author": "Rodolfo",
+  "name": "angular_modular",
+  "version": "0.1.0",
+  "bugs": "https://github.com/rodolfoRS19/angular_modular/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodolfoRS19/angular_modular.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-requirejs": "^0.4.4"
+  }
+}
