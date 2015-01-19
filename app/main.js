@@ -13,7 +13,7 @@ require.config({
   baseUrl: '.',
 
   /*
-    third party libraries to usa as dependencies on modules loading process.
+    third party libraries to us as dependencies on modules loading process.
     "IMPORTANT" don't put here our app modules, cause don't will be load their dependencies.
   */
   paths: {
@@ -22,21 +22,29 @@ require.config({
     angular: './app/libs/vendor/js/angular/angular',
     router: './app/libs/vendor/js/angular/ui_router',
 
+    require:'.app/libs/vendor/js/require_plugins/require',
     domReady: './app/libs/vendor/js/require_plugins/domready'
   },
 
   // angular does not support AMD out of the box, put it in a shim
     shim: {
+        'require':{
+          exports:'require'
+        },
+        'domReady':{
+          deps:["require"],
+          exports:'domReady'
+        },
         'angular': {
             deps:["jquery"],
             exports: 'angular'
         },
         'router':{
           deps: ["angular"]
-        }
+        },
     },
 
-    priority:["angular"],
+    priority:["require","angular"],
 
     // kick start application
     deps: ['./app/bootstrap']
